@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Welcome Email</title>
+	</head>
+	<body>
+		<h2>Hello {{name}}!</h2>
+		<p>We're glad to have you on board at {{company}}.</p>
+	</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Purchase Confirmation</title>
+		<style>
+			/* Core CSS */
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.wrapper {
+				padding: 20px;
+			}
+			.content {
+				background-color: #fff;
+				border-radius: 10px;
+				padding: 20px;
+				box-shadow: 0px 0px 10px #ccc;
+			}
+			.logo {
+				width: 150px;
+				margin: 0 auto;
+				display: block;
+			}
+			.title {
+				font-size: 24px;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.message {
+				font-size: 16px;
+				margin-bottom: 30px;
+				line-height: 1.5;
+			}
+			.footer {
+				font-size: 14px;
+				text-align: center;
+				margin-top: 30px;
+				color: #888;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<!-- <img src="./pict2.png" alt="logo" class="logo" /> -->
+				<h1 class="title">Purchase Confirmation</h1>
+				<p class="message">
+					Dear {{name}},<br /><br />
+					Thank you for your purchase from Course. and from now you are a
+					enrolled in this particular course .<br /><br />
+					Order Details: <br />
+					Order Number: {{orderNumber}}<br />
+					<!-- Item: {{Item}}<br />
+					Quantity: {{Quantity}}<br /> -->
+					Amount: {{Total}} USD<br /><br />
+					Thank you for choosing us. We appreciate your dedication for learning
+					.
+				</p>
+				<p class="footer">
+					This is an automated email. Please do not reply to this email. If you
+					have any questions, please contact our customer service team at
+					support@admin.com.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+
+
+POST http://35.238.117.253:5000/register
+#####
+POST http://localhost:5000/payment_details HTTP/1.1
+content-type: application/json
+
+{
+    "user_id":"6410582bd5c534733314f19c",
+    "course_id":["hello","hi"],
+    "order_id":"order_id",
+    "amount":250
+}
+#####
+
+POST  http://localhost:5000/reports HTTP/1.1
+####
+POST http://localhost:5000/reports HTTP/1.1
+content-type: application/json
+
+{
+    "user_id":"6410582bd5c534733314f19c"
+}
+
+####
+GET http://localhost:5000/categories
+
+####
+POST http://localhost:5000/category_course HTTP/1.1
+content-type: application/json
+
+{
+   "value":2
+}
+
+#####
+POST http://localhost:5000/update_coures HTTP/1.1
+content-type: application/json
+
+{
+  "moodle_user_id":"5"
+}
+
+#######
+POST http://localhost:5000/stripe-payment HTTP/1.1
+content-type: application/json
+
+{
+  "price":"5"
+}
+#####
+POST http://localhost:5000/send-email HTTP/1.1
+content-type: application/json
+
+{
+"message":"hello Notification",
+"email":"jaspreet.dev@palinfocom.com",
+"orderNumber":"dkkk",
+"Item":"React",
+"Quantity":"one",
+"Total":"234"
+}
+####
+
+POST http://localhost:5000/payment-process HTTP/1.1
+content-type: application/json
+
+{
+ "amount":234,
+ "currency":"INR"
+}
+
+
+
+######
+POST http://localhost:5000/enroll_user HTTP/1.1
+content-type: application/json
+
+{
+ "moodle_course_ids": [5],
+	"user": 22
+}
+
+####
+POST http://localhost:5000/register HTTP/1.1
+content-type: application/json
+
+{
+"email": "first1.lasdte1ddd@palinfocom.com",
+"firstname": "ddd",
+"lastname": "dddfdfdf",
+"password": "Ra*353",
+"username": "firsted1.last1@palinfocom.com"
+}
+
+#####
+POST http://localhost:5000/forgot_password HTTP/1.1
+content-type: application/json
+
+{
+ "email":"raju.kumar@palinfocom.com",
+ "username":"raju.kumar@palinfocom.com"
+}
+
+#####
+
+POST http://localhost:5000/remove_reset_token HTTP/1.1
+content-type: application/json
+
+{
+"token":"0ei3e"
+}
+
+########
+POST http://localhost:5000/reset_to_moodle HTTP/1.1
+content-type: application/json
+
+{
+"userId":20,
+"newPassword":"Ra12@345"
+}
